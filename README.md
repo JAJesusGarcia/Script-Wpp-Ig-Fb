@@ -1,4 +1,4 @@
-# Script-Wpp-Ig-Fb
+# Script-WhatsApp-Instagram-Facebook
 Código para enviar el Script intero de Shrek o Bee Movie a sus amigos de WhatsApp, Instagram o Facebook.
 
 Utilización
