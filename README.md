@@ -1,4 +1,5 @@
 # Script-WhatsApp-Instagram-Facebook
+
 Código para enviar el Script intero de Shrek o Bee Movie a sus amigos de WhatsApp, Instagram o Facebook.
 
 Utilización
@@ -16,3 +17,5 @@ Para solucionar este problema, la consola del desarrollador espera recibir una c
 Después de esto se permitirá colar y continuar con la ejecución del script.
 
 Copie el codigo en la consola y presione ENTER.
+
+Ten en cuenta que el uso de scripts automatizados puede violar las políticas de uso de las plataformas y podrías ser bloqueado temporal o permanentemente.
