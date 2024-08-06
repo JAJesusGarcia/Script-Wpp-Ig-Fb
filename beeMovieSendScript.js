@@ -1,10 +1,10 @@
-async function enviarScriptInstagram(scriptText) {
+async function enviarScriptFacebook(scriptText) {
   const lines = scriptText
     .split(/[\n\t]+/)
     .map((line) => line.trim())
     .filter((line) => line);
-  const main = document.querySelector('div[role="dialog"]');
-  const textarea = main.querySelector('textarea');
+  const main = document.querySelector('div[role="main"]');
+  const textarea = main.querySelector('div[contenteditable="true"]');
 
   if (!textarea) throw new Error('No hay una conversación abierta');
 
@@ -16,7 +16,7 @@ async function enviarScriptInstagram(scriptText) {
     textarea.dispatchEvent(new Event('input', { bubbles: true }));
 
     setTimeout(() => {
-      main.querySelector('button[type="submit"]').click();
+      main.querySelector('div[aria-label="Press Enter to send"]').click();
     }, 100);
 
     if (lines.indexOf(line) !== lines.length - 1)
@@ -26,7 +26,7 @@ async function enviarScriptInstagram(scriptText) {
   return lines.length;
 }
 
-enviarScriptInstagram(`
+enviarScriptFacebook(`
 BEE Movie
 
 Written by Jerry Seinfeld & Andy Robin & Barry Marder & Spike Feresten
